@@ -1,0 +1,663 @@
+0:100  0:100  MemLog inited, TSC freq: 2693878282
+0:100  0:000  LegacyRegion2: Chipset/proc: 0x01548086
+0:100  0:000   Next Generation Core processors (PAM 0x80-0x86)
+0:100  0:000   Test PAM1=(0x41=90, 0x5a=00, 0x81=11, 0x91=00) at chipset 01548086
+0:100  0:000  , Install = Success
+0:123  0:023  BiosVideoDriverBindingStart!
+0:123  0:000  BiosVideoCheckForVbe
+0:123  0:000  EdidOverride not found
+0:150  0:027   Edid1+
+0:150  0:000   found Detail Timing 1366x768
+0:150  0:000  timing string after 0xFE:AUO
+         
+0:150  0:000  timing string after 0xFE:B140XW01 V8 
+
+0:178  0:027   Edid0+
+0:178  0:000   found Detail Timing 1366x768
+0:178  0:000  ... already present
+0:178  0:000  timing string after 0xFE:AUO
+         
+0:178  0:000  timing string after 0xFE:B140XW01 V8 
+
+0:182  0:004     0 640x480 attr=BB - ok, edid-, 640x480, working, highest, pref=0
+0:182  0:000     1 800x600 attr=BB - ok, edid-, 800x600, working, highest, pref=1
+0:182  0:000     2 1024x768 attr=BB - ok, edid-, 1024x768, working, highest, pref=2
+0:184  0:001  BV new mode: 2 1024x768
+0:250  0:065   SetMode pref 2 (2) = Success
+2:430  2:180  
+2:430  0:000  Now is 22.12.2019,  15:24:48 (GMT)
+2:430  0:000  Starting Clover revision: 5101 (master, commit 2edf37e) on CLOVER EFI
+2:430  0:000  Build with: [Args: -D NO_GRUB_DRIVERS_EMBEDDED -t GCC53 | -D NO_GRUB_DRIVERS_EMBEDDED --conf=/Users/sergey/src/Clover/Conf -D USE_LOW_EBDA -a X64 -b RELEASE -t GCC53 -n 5 | OS: 10.11.6]
+2:430  0:000  SelfDevicePath=PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000) @AE479718
+2:430  0:000  SelfDirPath = \EFI\CLOVER
+2:430  0:000  SimpleTextEx Status=Success
+2:430  0:000  === [ Get Smbios ] ========================================
+2:430  0:000  Type 16 Index = 0
+2:430  0:000  Total Memory Slots Count = 2
+2:430  0:000  Type 17 Index = 0
+2:430  0:000  Table has error information, checking
+2:430  0:000  Found memory information in table 18/0, type=0x3, operation=0x2 syndrome=0x0
+2:430  0:000  ...memory OK
+2:430  0:000  SmbiosTable.Type17->Speed = 1600MHz
+2:430  0:000  SmbiosTable.Type17->Size = 8192MB
+2:430  0:000  SmbiosTable.Type17->Bank/Device = BANK 0 DIMM0
+2:430  0:000  SmbiosTable.Type17->Vendor = Samsung
+2:430  0:000  SmbiosTable.Type17->SerialNumber = 979011E1
+2:430  0:000  SmbiosTable.Type17->PartNumber = M471B1G73BH0-CK0  
+2:430  0:000  Type 17 Index = 1
+2:430  0:000  Table has error information, checking
+2:430  0:000  Found memory information in table 18/1, type=0x3, operation=0x2 syndrome=0x0
+2:430  0:000  ...memory OK
+2:430  0:000  SmbiosTable.Type17->Speed = 1600MHz
+2:430  0:000  SmbiosTable.Type17->Size = 8192MB
+2:430  0:000  SmbiosTable.Type17->Bank/Device = BANK 2 DIMM1
+2:430  0:000  SmbiosTable.Type17->Vendor = Samsung
+2:430  0:000  SmbiosTable.Type17->SerialNumber = 979011F5
+2:430  0:000  SmbiosTable.Type17->PartNumber = M471B1G73BH0-CK0  
+2:430  0:000  Boot status=0
+2:430  0:000  Running on: 'Satellite C805' with board 'Type2 - Board Product Name1'
+2:430  0:000  === [ GetCPUProperties ] ==================================
+2:430  0:000  CPU Vendor = 756E6547 Model=306A9
+2:430  0:000   The CPU supported SSE4.1
+2:430  0:000  BrandString = Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz
+2:430  0:000   The CPU supported turbo
+2:430  0:000  MSR 0x35               40008
+2:430  0:000  MSR 0xE2 before patch 1E008404
+2:430  0:000  MSR 0xE2 is locked, PM patches will be turned on
+2:430  0:000  MSR 0xCE              00080C10_F0011B00
+2:430  0:000  corrected FLEX_RATIO = 180000
+2:430  0:000  MSR 0x1B0             00000000
+2:430  0:000  FSBFrequency = 100 MHz, DMI FSBFrequency = 100 MHz, Corrected FSBFrequency = 100 MHz
+2:430  0:000  MaxDiv/MinDiv: 27.0/12
+2:430  0:000  Turbo: 35/35/36/37
+2:430  0:000  Features: 0xBFEBFBFF
+2:430  0:000  Threads: 8
+2:430  0:000  Cores: 4
+2:430  0:000  FSB: 100 MHz
+2:430  0:000  CPU: 2700 MHz
+2:430  0:000  TSC: 2700 MHz
+2:430  0:000  PIS: 100 MHz
+2:430  0:000  ExternalClock: 25 MHz
+2:430  0:000  === [ GetDevices ] ========================================
+2:430  0:000  GOP found at: PcieRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/AcpiAdr(0x80010100)
+2:430  0:000  PCI (00|00:00.00) : 8086 0154 class=060000
+2:430  0:000  PCI (00|00:01.00) : 8086 0151 class=060400
+2:430  0:000  PCI (00|01:00.00) : 1002 6742 class=030000
+2:430  0:000   - GOP: Provided by device
+2:430  0:000   - GFX: Model=AMD Radeon HD 7500/7600 (ATI/AMD)
+2:430  0:000  PCI (00|01:00.01) : 1002 AA90 class=040300
+2:430  0:000   - HDMI Audio: 
+2:430  0:000  PCI (00|00:14.00) : 8086 1E31 class=0C0330
+2:430  0:000  PCI (00|00:16.00) : 8086 1E3A class=078000
+2:430  0:000  PCI (00|00:1A.00) : 8086 1E2D class=0C0320
+2:430  0:000  PCI (00|00:1B.00) : 8086 1E20 class=040300
+2:430  0:000  PCI (00|00:1C.00) : 8086 1E10 class=060400
+2:430  0:000  PCI (00|00:1C.02) : 8086 1E14 class=060400
+2:430  0:000  PCI (00|08:00.00) : 14E4 43B1 class=028000
+2:430  0:000   - WIFI: Vendor=Broadcom
+2:430  0:000  PCI (00|00:1C.03) : 8086 1E16 class=060400
+2:431  0:000  PCI (00|09:00.00) : 1969 2062 class=020000
+2:431  0:000   - LAN: 0 Vendor=Atheros
+2:431  0:000  PCI (00|00:1D.00) : 8086 1E26 class=0C0320
+2:431  0:000  PCI (00|00:1F.00) : 8086 1E59 class=060100
+2:431  0:000  PCI (00|00:1F.02) : 8086 1E03 class=010601
+2:431  0:000  PCI (00|00:1F.03) : 8086 1E22 class=0C0500
+2:431  0:000  === [ GetDefaultSettings ] ================================
+2:431  0:000  Clover load options size = 0 bytes
+2:431  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\Satellite C805--00-00-00-00-00-00. Dir not exists
+2:431  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\Satellite C805. Dir not exists
+2:431  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\Satellite C805-2700. Dir not exists
+2:431  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\Type2 - Board Product Name1. Dir not exists
+2:431  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\Type2 - Board Product Name1-2700. Dir not exists
+2:431  0:000  set OEMPath by default: EFI\CLOVER
+2:444  0:013  EFI\CLOVER\config.plist loaded: Success
+2:444  0:000  === [ GetListOfThemes ] ===================================
+2:448  0:003  - [00]: SimpleThemeDark
+2:448  0:000  - [01]: Hackintosh_ID
+2:455  0:006  === [ Found config plists ] ===============================
+2:455  0:000  - config_backup.plist
+2:455  0:000  - config_backup„o,.plist
+2:455  0:000  - config_catalina.plist
+2:455  0:000  - config.plist
+2:455  0:000  === [ GetEarlyUserSettings ] ==============================
+2:455  0:000  timeout set to 5
+2:455  0:000  Custom boot CUSTOM_BOOT_DISABLED (0x0)
+2:455  0:000  KernelXCPM: enabled
+2:455  0:000  ForceKextsToLoad: 1 requested
+2:455  0:000   - [0]: System\Library\Extensions\IONetworkingFamily.kext
+2:455  0:000  KextsToPatch: 3 requested
+2:455  0:000   - [00]: com.apple.driver.usb.AppleUSBXHCI (10.13.x USB Port Limit Patch) :: MatchOS: 10.13.x :: BinPatch :: data len: 10
+2:455  0:000   - [01]: com.apple.driver.usb.AppleUSBXHCI (USB 10.13.6+ by PMHeart) :: MatchOS: 10.13.x :: BinPatch :: data len: 10
+2:455  0:000   - [02]: com.apple.iokit.IOAHCIBlockStorage (Enable TRIM for SSD) :: BinPatch :: data len: 11
+2:455  0:000   - patch disabled at config
+2:455  0:000  KernelToPatch: 3 requested
+2:455  0:000   - [00]: Disable panic kext logging on 10.13 Debug kernel :: MatchOS: 10.13 :: data len: 6
+2:455  0:000   - [01]: Disable panic kext logging on 10.13 Release kernel :: MatchOS: 10.13 :: data len: 6
+2:455  0:000   - [02]: MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha :: data len: 8
+2:455  0:000  Default theme: SimpleThemeDark
+2:455  0:000  ** Warning: unknown custom entry Type 'Other'
+2:455  0:000  === [ LoadDrivers ] =======================================
+2:455  0:000  Video bios patch requested or CustomEDID - forcing video reconnect
+2:455  0:000  1 drivers needs connecting ...
+2:455  0:000  PlatformDriverOverrideProtocol not found. Installing ... Success
+2:455  0:000  EdidActive: size=128 found
+2:455  0:000  Video driver loaded: disconnect Success
+2:497  0:042  VideoBiosPatchNativeFromEdid:
+2:497  0:000   Bios: ATI, MasterDataTables: 0xCA83E, std_vesa: 0xCA882, ati_mode_table: 0xCA886, mode_table_size: 0x1DC BT_ATI_2
+2:497  0:000   VideoBiosPatchInit(LegacyRegion = Not Found, LegacyRegion2 = Success) = Success
+2:497  0:000   VideoBiosUnlock:  unlocked
+2:497  0:000   Patching: BT_ATI_2
+2:497  0:000   Parse Edid: descriptor block 0 is timing descriptor (h_active: 1366, v_active: 768, h_sync_offset: 38, h_sync_width: 22, h_blanking: 70, v_blanking: 35, pixel_clock: 6930, v_sync_offset: 3, v_sync_width: 6)
+2:497  0:000   mode 0 (320x200) patched to 1366x768
+2:497  0:000   VideoBiosLock: Success
+2:504  0:006  BiosVideoDriverBindingStart!
+2:504  0:000  BiosVideoCheckForVbe
+2:504  0:000  EdidOverride not found
+2:531  0:027   Edid1+
+2:531  0:000   found Detail Timing 1366x768
+2:531  0:000  timing string after 0xFE:AUO
+         
+2:531  0:000  timing string after 0xFE:B140XW01 V8 
+
+2:559  0:027   Edid0+
+2:559  0:000   found Detail Timing 1366x768
+2:559  0:000  ... already present
+2:559  0:000  timing string after 0xFE:AUO
+         
+2:559  0:000  timing string after 0xFE:B140XW01 V8 
+
+2:561  0:001     0 1366x768 attr=BB - ok, edid+, working, highest, pref=0
+2:563  0:002     1 640x480 attr=BB - ok, edid-, 640x480, working
+2:563  0:000     2 800x600 attr=BB - ok, edid-, 800x600, working
+2:563  0:000     3 1024x768 attr=BB - ok, edid-, 1024x768, working
+2:565  0:001  BV new mode: 0 1366x768
+2:646  0:080   SetMode pref 0 (0) = Success
+2:795  0:149  === [ InitScreen ] ========================================
+2:795  0:000  Console modes reported: 4, available modes:
+2:795  0:000   - [01]: 80x25
+2:795  0:000   - [03]: 100x31
+2:795  0:000   - [04]: 170x40 (current mode)
+2:795  0:000  SetScreenResolution: 1366x768 - already set
+2:795  0:000  SetScreenResolution: 1366x768 - already set
+2:795  0:000  reinit: self device path=PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+2:795  0:000  === [ GetMacAddress ] =====================================
+2:795  0:000  === [ ScanSPD ] ===========================================
+2:796  0:000  Scanning SMBus [8086:1E22], mmio: 0xC1415004, ioport: 0x4000, hostc: 0x1
+2:815  0:019  Slot: 0 Type 24 8192MB 1600MHz Vendor=Samsung PartNo=M471B1G73BH0-CK0 SerialNo=0907090001010E01
+2:834  0:019  Slot: 2 Type 24 8192MB 1600MHz Vendor=Samsung PartNo=M471B1G73BH0-CK0 SerialNo=0907090001010F05
+2:835  0:000  === [ GetAcpiTablesList ] =================================
+2:835  0:000  Get Acpi Tables List from RSDT:
+2:835  0:000   - [00]: FACP  TOSQCI00 len=268
+2:835  0:000   - [01]: UEFI  TOSQCI00 len=566
+2:835  0:000   - [02]: ASF!  TOSQCI00 len=165
+2:835  0:000   - [03]: HPET  TOSQCI00 len=56
+2:835  0:000   - [04]: APIC  TOSQCI00 len=140
+2:835  0:000   - [05]: MCFG  TOSQCI00 len=60
+2:835  0:000   - [06]: SLIC  TOSQCI00 len=374
+2:835  0:000   - [07]: WDAT  TOSQCI00 len=548
+2:835  0:000   - [08]: SSDT  CR CRB   len=4200
+2:835  0:000   - [09]: BOOT  TOSQCI00 len=40
+2:835  0:000   - [10]: ASPT  TOSQCI00 len=52
+2:835  0:000   - [11]: MSDM  TOSQCI00 len=85
+2:835  0:000   - [12]: FPDT  TOSQCI00 len=68
+2:835  0:000   - [13]: SSDT  CR CRB   len=2517
+2:835  0:000   - [14]: SSDT  CR CRB   len=2706
+2:835  0:000   - [15]: DMAR  TOSQCI00 len=128
+2:835  0:000  Calibrated TSC Frequency = 2693878282 = 2693MHz
+2:835  0:000  === [ GetUserSettings ] ===================================
+2:835  0:000  USB FixOwnership: yes
+2:835  0:000  Dropping 3 tables:
+2:835  0:000   - [00]: Drop table  signature="DMAR" (52414D44)
+2:835  0:000           - set table: 52414D44,                0 to drop: yes
+2:835  0:000   - [01]: Drop table  signature="SSDT" (54445353) table-id="CpuPm" (0000006D50757043)
+2:835  0:000           - set table: 54445353,       6D50757043 to drop: no
+2:835  0:000   - [02]: Drop table  signature="SSDT" (54445353) table-id="Cpu0Ist" (0074734930757043)
+2:835  0:000           - set table: 54445353,   74734930757043 to drop: no
+2:836  0:000   - final DSDT Fix mask=01001005
+2:836  0:000  PatchesDSDT: 12 requested
+2:836  0:000   - [00]: (change OSID to XSID (to avoid match against _OSI XOSI patch)) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000   - [01]: (change _OSI to XOSI) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000   - [02]: (change _DSM to XDSM) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000   - [03]: (change EC0 to EC) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000   - [04]: (change H_EC to EC) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000   - [05]: (change ECDV to EC) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000   - [06]: (change HDAS to HDEF) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000    patch disabled at config
+2:836  0:000   - [07]: (change HECI to IMEI) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000   - [08]: (change MEI to IMEI) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000   - [09]: (Rename EHC1 to EH01 (USB)) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000   - [10]: (Rename EHC2 to EH02 (USB)) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000   - [11]: (Rename XHCI to XHC (USB)) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:836  0:000  PluginType: 1
+2:836  0:000  Using ProductName from config: MacBookPro9,1
+2:836  0:000  Found same BiosVersion in clover and config
+2:836  0:000  BiosVersion: MBP91.88Z.F000.B00.1907241129
+2:836  0:000  BiosReleaseDate: 07/24/2019
+2:836  0:000  Using EfiVersion from clover: 229.0.0.0.0
+2:836  0:000  Using FirmwareFeatures from config: 0xC00DE137
+2:836  0:000  Using FirmwareFeaturesMask from config: 0xFF1FFF3F
+2:836  0:000  Board-ID set from config as Mac-4B7AC7E43945597E
+2:836  0:000  BoardType: 0xA
+2:836  0:000  ChassisType: 0xA
+2:836  0:000  Converted CustomUUID 010E48D9-528E-4704-A19B-50E313F0F55C
+2:839  0:003  === [ Found DSDT tables ] =================================
+2:842  0:003  - DSDT.aml
+4:244  1:401  === [ ScanVolumes ] =======================================
+4:244  0:000  Found 8 volumes with blockIO
+4:244  0:000  - [00]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)
+4:247  0:003          Result of bootcode detection: bootable unknown (legacy)
+4:247  0:000  - [01]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)
+4:250  0:002          Result of bootcode detection: bootable unknown (legacy)
+4:250  0:000  - [02]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+4:253  0:003          Result of bootcode detection: bootable unknown (legacy)
+4:253  0:000          This is SelfVolume !!
+4:253  0:000  - [03]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,0D191528-9552-49CB-AC03-8954E02200A9,0x96000,0x96000)
+4:256  0:002          Result of bootcode detection: bootable unknown (legacy)
+4:256  0:000  - [04]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)
+4:259  0:002  - [05]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,1D245476-CA06-4A43-AED9-E573E5CA5BAF,0xCDED0E0,0x135F20)
+4:262  0:002  - [06]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(5,GPT,5046A270-35AC-4925-A479-84B2D3FBBC58,0xCF23000,0xF001488)
+4:265  0:002          Result of bootcode detection: bootable unknown (legacy)
+4:265  0:000  - [07]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)\HD(1,MBR,0xAD70B901,0x800,0xDF93000)
+4:268  0:002          Result of bootcode detection: bootable unknown (legacy)
+4:271  0:003  PutNvramPlistToRtVars: nvram.plist not found
+4:271  0:000  No AudioIoProtocols, status=Not Found
+4:271  0:000  === [ InitTheme ] =========================================
+4:271  0:000  use daylight theme
+4:279  0:007  Using theme 'SimpleThemeDark' (EFI\CLOVER\themes\SimpleThemeDark)
+4:279  0:000  OS main and drive as badge
+4:279  0:000  file sound read: sound.wav Not Found
+4:288  0:009  Loading font from ThemeDir: Success
+4:289  0:000  theme inited
+4:289  0:000  Chosen theme SimpleThemeDark
+4:289  0:000  after NVRAM boot-args=kext-dev-mode=1 darkwake=0 slide=50
+4:289  0:000  === [ Dump SMC keys from NVRAM ] ==========================
+4:289  0:000  no AppleSMC protocol
+4:289  0:000  === [ AddCustomEntries ] ==================================
+4:289  0:000  Custom entry 0 skipped because it is disabled.
+4:289  0:000  === [ ScanLoader ] ========================================
+4:289  0:000  - [02]: 'EFI'
+4:289  0:000          AddLoaderEntry for Volume Name=EFI
+4:289  0:000          skipped because entry is hidden
+4:289  0:000  - [04]: 'Hackintosh HD'
+4:315  0:026          AddLoaderEntry for Volume Name=Hackintosh HD
+4:315  0:000      Not match custom entry 0: Type: not match
+4:331  0:016      hibernated: set as never
+4:340  0:009  - [05]: 'Recovery HD'
+4:344  0:003          AddLoaderEntry for Volume Name=Recovery HD
+4:344  0:000      Not match custom entry 0: Type: not match
+4:358  0:013  Scanning legacy ...
+4:358  0:000  === [ AddCustomTool ] =====================================
+4:365  0:006  found tool \EFI\CLOVER\tools\Shell64U.efi
+4:365  0:000  Checking EFI partition Volume 2 for Clover
+4:365  0:000   Found Clover
+4:370  0:005  === [ GetEfiBootDeviceFromNvram ] =========================
+4:370  0:000   - found entry 0. 'Boot macOS from Hackintosh HD', Volume 'Hackintosh HD', DevicePath 'PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)\System\Library\CoreServices\boot.efii'
+4:370  0:000  DefaultIndex=0 and MainMenu.EntryCount=8
+4:476  0:106  GUI ready
+15:736  11:259  exit from MainMenu 8
+15:736  0:000  ReinitSelfLib after theme change
+15:736  0:000  reinit: self device path=PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+15:736  0:000  === [ ScanVolumes ] =======================================
+15:736  0:000  Found 8 volumes with blockIO
+15:736  0:000  - [00]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)
+15:768  0:032          Result of bootcode detection: bootable unknown (legacy)
+15:768  0:000  - [01]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)
+15:771  0:002          Result of bootcode detection: bootable unknown (legacy)
+15:771  0:000  - [02]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+15:774  0:003          Result of bootcode detection: bootable unknown (legacy)
+15:777  0:003          This is SelfVolume !!
+15:777  0:000  - [03]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,0D191528-9552-49CB-AC03-8954E02200A9,0x96000,0x96000)
+15:780  0:002          Result of bootcode detection: bootable unknown (legacy)
+15:780  0:000  - [04]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)
+15:783  0:002  - [05]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,1D245476-CA06-4A43-AED9-E573E5CA5BAF,0xCDED0E0,0x135F20)
+15:786  0:003  - [06]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(5,GPT,5046A270-35AC-4925-A479-84B2D3FBBC58,0xCF23000,0xF001488)
+15:789  0:002          Result of bootcode detection: bootable unknown (legacy)
+15:789  0:000  - [07]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)\HD(1,MBR,0xAD70B901,0x800,0xDF93000)
+15:792  0:002          Result of bootcode detection: bootable unknown (legacy)
+15:792  0:000  No AudioIoProtocols, status=Not Found
+15:792  0:000  theme inited
+15:792  0:000  Chosen theme SimpleThemeDark
+15:792  0:000  after NVRAM boot-args=kext-dev-mode=1 darkwake=0 slide=50
+15:792  0:000  === [ AddCustomEntries ] ==================================
+15:792  0:000  Custom entry 0 skipped because it is disabled.
+15:792  0:000  === [ ScanLoader ] ========================================
+15:792  0:000  - [02]: 'EFI'
+15:792  0:000          AddLoaderEntry for Volume Name=EFI
+15:792  0:000      Skipped because matching custom entry 0!
+15:792  0:000  - [04]: 'Hackintosh HD'
+15:801  0:008          AddLoaderEntry for Volume Name=Hackintosh HD
+15:801  0:000      Not match custom entry 0: Type: not match
+15:803  0:002      hibernated: set as never
+15:809  0:005  - [05]: 'Recovery HD'
+15:809  0:000          AddLoaderEntry for Volume Name=Recovery HD
+15:809  0:000      Not match custom entry 0: Type: not match
+15:814  0:004  Scanning legacy ...
+15:814  0:000  === [ AddCustomTool ] =====================================
+15:814  0:000  found tool \EFI\CLOVER\tools\Shell64U.efi
+15:814  0:000  Checking EFI partition Volume 2 for Clover
+15:814  0:000   Found Clover
+15:814  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+15:814  0:000   - found entry 0. 'Boot macOS from Hackintosh HD', Volume 'Hackintosh HD', DevicePath 'PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)\System\Library\CoreServices\boot.efii'
+15:814  0:000  DefaultIndex=0 and MainMenu.EntryCount=8
+16:295  0:480  exit from MainMenu 8
+16:295  0:000  ReinitSelfLib after theme change
+16:295  0:000  reinit: self device path=PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+16:295  0:000  === [ ScanVolumes ] =======================================
+16:295  0:000  Found 8 volumes with blockIO
+16:295  0:000  - [00]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)
+16:327  0:032          Result of bootcode detection: bootable unknown (legacy)
+16:327  0:000  - [01]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)
+16:330  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:330  0:000  - [02]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+16:333  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:333  0:000          This is SelfVolume !!
+16:333  0:000  - [03]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,0D191528-9552-49CB-AC03-8954E02200A9,0x96000,0x96000)
+16:336  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:336  0:000  - [04]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)
+16:339  0:002  - [05]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,1D245476-CA06-4A43-AED9-E573E5CA5BAF,0xCDED0E0,0x135F20)
+16:342  0:003  - [06]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(5,GPT,5046A270-35AC-4925-A479-84B2D3FBBC58,0xCF23000,0xF001488)
+16:345  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:345  0:000  - [07]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)\HD(1,MBR,0xAD70B901,0x800,0xDF93000)
+16:348  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:348  0:000  No AudioIoProtocols, status=Not Found
+16:348  0:000  theme inited
+16:348  0:000  Chosen theme SimpleThemeDark
+16:348  0:000  after NVRAM boot-args=kext-dev-mode=1 darkwake=0 slide=50
+16:348  0:000  === [ AddCustomEntries ] ==================================
+16:348  0:000  Custom entry 0 skipped because it is disabled.
+16:348  0:000  === [ ScanLoader ] ========================================
+16:348  0:000  - [02]: 'EFI'
+16:348  0:000          AddLoaderEntry for Volume Name=EFI
+16:348  0:000          skipped because entry is hidden
+16:348  0:000  - [04]: 'Hackintosh HD'
+16:356  0:008          AddLoaderEntry for Volume Name=Hackintosh HD
+16:356  0:000      Not match custom entry 0: Type: not match
+16:359  0:002      hibernated: set as never
+16:364  0:005  - [05]: 'Recovery HD'
+16:365  0:000          AddLoaderEntry for Volume Name=Recovery HD
+16:365  0:000      Not match custom entry 0: Type: not match
+16:369  0:004  Scanning legacy ...
+16:369  0:000  === [ AddCustomTool ] =====================================
+16:369  0:000  found tool \EFI\CLOVER\tools\Shell64U.efi
+16:369  0:000  Checking EFI partition Volume 2 for Clover
+16:369  0:000   Found Clover
+16:369  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+16:369  0:000   - found entry 0. 'Boot macOS from Hackintosh HD', Volume 'Hackintosh HD', DevicePath 'PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)\System\Library\CoreServices\boot.efii'
+16:369  0:000  DefaultIndex=0 and MainMenu.EntryCount=8
+16:522  0:153  exit from MainMenu 8
+16:522  0:000  ReinitSelfLib after theme change
+16:522  0:000  reinit: self device path=PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+16:523  0:000  === [ ScanVolumes ] =======================================
+16:523  0:000  Found 8 volumes with blockIO
+16:523  0:000  - [00]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)
+16:526  0:003          Result of bootcode detection: bootable unknown (legacy)
+16:526  0:000  - [01]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)
+16:528  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:528  0:000  - [02]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+16:531  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:531  0:000          This is SelfVolume !!
+16:531  0:000  - [03]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,0D191528-9552-49CB-AC03-8954E02200A9,0x96000,0x96000)
+16:535  0:003          Result of bootcode detection: bootable unknown (legacy)
+16:535  0:000  - [04]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)
+16:537  0:002  - [05]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,1D245476-CA06-4A43-AED9-E573E5CA5BAF,0xCDED0E0,0x135F20)
+16:541  0:003  - [06]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(5,GPT,5046A270-35AC-4925-A479-84B2D3FBBC58,0xCF23000,0xF001488)
+16:543  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:544  0:000  - [07]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)\HD(1,MBR,0xAD70B901,0x800,0xDF93000)
+16:546  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:546  0:000  No AudioIoProtocols, status=Not Found
+16:546  0:000  theme inited
+16:546  0:000  Chosen theme SimpleThemeDark
+16:546  0:000  after NVRAM boot-args=kext-dev-mode=1 darkwake=0 slide=50
+16:546  0:000  === [ AddCustomEntries ] ==================================
+16:546  0:000  Custom entry 0 skipped because it is disabled.
+16:546  0:000  === [ ScanLoader ] ========================================
+16:546  0:000  - [02]: 'EFI'
+16:547  0:000          AddLoaderEntry for Volume Name=EFI
+16:547  0:000      Skipped because matching custom entry 0!
+16:547  0:000  - [04]: 'Hackintosh HD'
+16:555  0:008          AddLoaderEntry for Volume Name=Hackintosh HD
+16:555  0:000      Not match custom entry 0: Type: not match
+16:557  0:002      hibernated: set as never
+16:563  0:005  - [05]: 'Recovery HD'
+16:563  0:000          AddLoaderEntry for Volume Name=Recovery HD
+16:563  0:000      Not match custom entry 0: Type: not match
+16:568  0:004  Scanning legacy ...
+16:568  0:000  === [ AddCustomTool ] =====================================
+16:568  0:000  found tool \EFI\CLOVER\tools\Shell64U.efi
+16:568  0:000  Checking EFI partition Volume 2 for Clover
+16:568  0:000   Found Clover
+16:568  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+16:568  0:000   - found entry 0. 'Boot macOS from Hackintosh HD', Volume 'Hackintosh HD', DevicePath 'PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)\System\Library\CoreServices\boot.efii'
+16:568  0:000  DefaultIndex=0 and MainMenu.EntryCount=8
+16:704  0:136  exit from MainMenu 8
+16:704  0:000  ReinitSelfLib after theme change
+16:704  0:000  reinit: self device path=PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+16:704  0:000  === [ ScanVolumes ] =======================================
+16:705  0:000  Found 8 volumes with blockIO
+16:705  0:000  - [00]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)
+16:708  0:003          Result of bootcode detection: bootable unknown (legacy)
+16:708  0:000  - [01]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)
+16:710  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:710  0:000  - [02]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+16:713  0:003          Result of bootcode detection: bootable unknown (legacy)
+16:713  0:000          This is SelfVolume !!
+16:713  0:000  - [03]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,0D191528-9552-49CB-AC03-8954E02200A9,0x96000,0x96000)
+16:716  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:716  0:000  - [04]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)
+16:719  0:002  - [05]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,1D245476-CA06-4A43-AED9-E573E5CA5BAF,0xCDED0E0,0x135F20)
+16:722  0:003  - [06]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(5,GPT,5046A270-35AC-4925-A479-84B2D3FBBC58,0xCF23000,0xF001488)
+16:725  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:725  0:000  - [07]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)\HD(1,MBR,0xAD70B901,0x800,0xDF93000)
+16:728  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:728  0:000  No AudioIoProtocols, status=Not Found
+16:728  0:000  theme inited
+16:728  0:000  Chosen theme SimpleThemeDark
+16:728  0:000  after NVRAM boot-args=kext-dev-mode=1 darkwake=0 slide=50
+16:728  0:000  === [ AddCustomEntries ] ==================================
+16:728  0:000  Custom entry 0 skipped because it is disabled.
+16:728  0:000  === [ ScanLoader ] ========================================
+16:728  0:000  - [02]: 'EFI'
+16:728  0:000          AddLoaderEntry for Volume Name=EFI
+16:728  0:000          skipped because entry is hidden
+16:728  0:000  - [04]: 'Hackintosh HD'
+16:737  0:008          AddLoaderEntry for Volume Name=Hackintosh HD
+16:737  0:000      Not match custom entry 0: Type: not match
+16:739  0:002      hibernated: set as never
+16:745  0:005  - [05]: 'Recovery HD'
+16:745  0:000          AddLoaderEntry for Volume Name=Recovery HD
+16:745  0:000      Not match custom entry 0: Type: not match
+16:750  0:004  Scanning legacy ...
+16:750  0:000  === [ AddCustomTool ] =====================================
+16:750  0:000  found tool \EFI\CLOVER\tools\Shell64U.efi
+16:750  0:000  Checking EFI partition Volume 2 for Clover
+16:750  0:000   Found Clover
+16:750  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+16:750  0:000   - found entry 0. 'Boot macOS from Hackintosh HD', Volume 'Hackintosh HD', DevicePath 'PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)\System\Library\CoreServices\boot.efii'
+16:750  0:000  DefaultIndex=0 and MainMenu.EntryCount=8
+16:872  0:122  exit from MainMenu 8
+16:872  0:000  ReinitSelfLib after theme change
+16:872  0:000  reinit: self device path=PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+16:872  0:000  === [ ScanVolumes ] =======================================
+16:872  0:000  Found 8 volumes with blockIO
+16:872  0:000  - [00]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)
+16:875  0:003          Result of bootcode detection: bootable unknown (legacy)
+16:875  0:000  - [01]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)
+16:878  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:878  0:000  - [02]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+16:881  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:881  0:000          This is SelfVolume !!
+16:881  0:000  - [03]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,0D191528-9552-49CB-AC03-8954E02200A9,0x96000,0x96000)
+16:884  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:884  0:000  - [04]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)
+16:887  0:002  - [05]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,1D245476-CA06-4A43-AED9-E573E5CA5BAF,0xCDED0E0,0x135F20)
+16:890  0:003  - [06]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(5,GPT,5046A270-35AC-4925-A479-84B2D3FBBC58,0xCF23000,0xF001488)
+16:893  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:893  0:000  - [07]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)\HD(1,MBR,0xAD70B901,0x800,0xDF93000)
+16:896  0:002          Result of bootcode detection: bootable unknown (legacy)
+16:896  0:000  No AudioIoProtocols, status=Not Found
+16:896  0:000  theme inited
+16:896  0:000  Chosen theme SimpleThemeDark
+16:896  0:000  after NVRAM boot-args=kext-dev-mode=1 darkwake=0 slide=50
+16:896  0:000  === [ AddCustomEntries ] ==================================
+16:896  0:000  Custom entry 0 skipped because it is disabled.
+16:896  0:000  === [ ScanLoader ] ========================================
+16:896  0:000  - [02]: 'EFI'
+16:896  0:000          AddLoaderEntry for Volume Name=EFI
+16:896  0:000      Skipped because matching custom entry 0!
+16:896  0:000  - [04]: 'Hackintosh HD'
+16:904  0:008          AddLoaderEntry for Volume Name=Hackintosh HD
+16:904  0:000      Not match custom entry 0: Type: not match
+16:907  0:002      hibernated: set as never
+16:912  0:005  - [05]: 'Recovery HD'
+16:913  0:000          AddLoaderEntry for Volume Name=Recovery HD
+16:913  0:000      Not match custom entry 0: Type: not match
+16:917  0:004  Scanning legacy ...
+16:917  0:000  === [ AddCustomTool ] =====================================
+16:917  0:000  found tool \EFI\CLOVER\tools\Shell64U.efi
+16:917  0:000  Checking EFI partition Volume 2 for Clover
+16:917  0:000   Found Clover
+16:917  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+16:917  0:000   - found entry 0. 'Boot macOS from Hackintosh HD', Volume 'Hackintosh HD', DevicePath 'PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)\System\Library\CoreServices\boot.efii'
+16:917  0:000  DefaultIndex=0 and MainMenu.EntryCount=8
+17:210  0:292  Found BIOS RSDP at FE020
+17:210  0:000  Saving ACPI tables from RSDP FE020 to EFI\CLOVER\ACPI\origin ...
+17:210  0:000   FE020: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+17:299  0:088    (Xsdt: AF7FE210, Rsdt: AF7FE124)
+17:299  0:000    AF7FE210: 'XSDT', 'TOSQCI00', Rev: 1, Len: 164 -> XSDT.aml
+17:348  0:049    AF7FE124: 'RSDT', 'TOSQCI00', Rev: 1, Len: 100 -> RSDT.aml
+17:398  0:049    Tables in Xsdt: 16
+17:398  0:000    0. AF7FB000: 'FACP', 'TOSQCI00', Rev: 5, Len: 268 -> FACP.aml
+17:448  0:049        (Dsdt: AF7E9000, Facs: AF7BB000, XDsdt: AF7E9000, XFacs: 0)
+17:448  0:000        AF7E9000: 'DSDT', 'TOSQCI00', Rev: 1, Len: 57580 -> DSDT.aml
+17:536  0:088        AF7BB000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+17:589  0:052    1. AF7FD000: 'UEFI', 'TOSQCI00', Rev: 1, Len: 566 -> UEFI.aml
+17:639  0:049    2. AF7FC000: 'ASF!', 'TOSQCI00', Rev: 32, Len: 165 -> ASF!.aml
+17:688  0:049    3. AF7FA000: 'HPET', 'TOSQCI00', Rev: 1, Len: 56 -> HPET.aml
+17:738  0:049    4. AF7F9000: 'APIC', 'TOSQCI00', Rev: 3, Len: 140 -> APIC.aml
+17:787  0:049    5. AF7F8000: 'MCFG', 'TOSQCI00', Rev: 1, Len: 60 -> MCFG.aml
+17:837  0:049    6. AF7E8000: 'SLIC', 'TOSQCI00', Rev: 1, Len: 374 -> SLIC.aml
+17:890  0:052    7. AF7E7000: 'WDAT', 'TOSQCI00', Rev: 1, Len: 548 -> WDAT.aml
+17:939  0:049    8. AF7E5000: 'SSDT', 'CR CRB', Rev: 1, Len: 4200 -> SSDT-0-CR CRB.aml
+17:989  0:049    9. AF7E3000: 'BOOT', 'TOSQCI00', Rev: 1, Len: 40 -> BOOT.aml
+18:038  0:049    10. AF7DE000: 'ASPT', 'TOSQCI00', Rev: 7, Len: 52 -> ASPT.aml
+18:088  0:049    11. AF7DD000: 'MSDM', 'TOSQCI00', Rev: 3, Len: 85 -> MSDM.aml
+18:138  0:049    12. AF7DB000: 'FPDT', 'TOSQCI00', Rev: 1, Len: 68 -> FPDT.aml
+18:187  0:049    13. AF7DA000: 'SSDT', 'CR CRB', Rev: 1, Len: 2517 -> SSDT-1-CR CRB.aml
+18:237  0:049    14. AF7D9000: 'SSDT', 'CR CRB', Rev: 1, Len: 2706 -> SSDT-2-CR CRB.aml (Found hidden SSDT 4 pcs)
+18:286  0:049        * AD75A018: '', '', Rev: 64, Len: 0  00 0C 03 00 00 00 00 00 40 0D 00 FF 7F 0D 00 00 
+18:286  0:000        * AF5FAA98: 'SSDT', 'ApIst', Rev: 1, Len: 771  53 53 44 54 03 03 00 00 01 5E 50 6D 52 65 66 00 Internal length = 771 -> SSDT-x2_0-ApIst.aml
+18:336  0:049        * AF5F9018: 'SSDT', 'Cpu0Cst', Rev: 1, Len: 2107  53 53 44 54 3B 08 00 00 01 C0 50 6D 52 65 66 00 Internal length = 2107 -> SSDT-x2_1-Cpu0Cst.aml
+18:388  0:052        * AF5F8D98: 'SSDT', 'ApCst', Rev: 1, Len: 281  53 53 44 54 19 01 00 00 01 D4 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x2_2-ApCst.aml
+18:441  0:052  
+18:441  0:000    15. AF7D8000: 'DMAR', 'TOSQCI00', Rev: 1, Len: 128 -> DMAR.aml
+18:491  0:049    Tables in Rsdt: 16
+18:491  0:000    0. AF7FB000: 'FACP', 'TOSQCI00', Rev: 5, Len: 268
+18:491  0:000        (Dsdt: AF7E9000, Facs: AF7BB000, XDsdt: AF7E9000, XFacs: 0)
+18:491  0:000        AF7E9000: 'DSDT', 'TOSQCI00', Rev: 1, Len: 57580
+18:491  0:000        AF7BB000: 'FACS', Ver: 2, Len: 64
+18:491  0:000    1. AF7FD000: 'UEFI', 'TOSQCI00', Rev: 1, Len: 566
+18:491  0:000    2. AF7FC000: 'ASF!', 'TOSQCI00', Rev: 32, Len: 165
+18:491  0:000    3. AF7FA000: 'HPET', 'TOSQCI00', Rev: 1, Len: 56
+18:491  0:000    4. AF7F9000: 'APIC', 'TOSQCI00', Rev: 3, Len: 140
+18:491  0:000    5. AF7F8000: 'MCFG', 'TOSQCI00', Rev: 1, Len: 60
+18:491  0:000    6. AF7E8000: 'SLIC', 'TOSQCI00', Rev: 1, Len: 374
+18:491  0:000    7. AF7E7000: 'WDAT', 'TOSQCI00', Rev: 1, Len: 548
+18:491  0:000    8. AF7E5000: 'SSDT', 'CR CRB', Rev: 1, Len: 4200
+18:491  0:000    9. AF7E3000: 'BOOT', 'TOSQCI00', Rev: 1, Len: 40
+18:491  0:000    10. AF7DE000: 'ASPT', 'TOSQCI00', Rev: 7, Len: 52
+18:491  0:000    11. AF7DD000: 'MSDM', 'TOSQCI00', Rev: 3, Len: 85
+18:491  0:000    12. AF7DB000: 'FPDT', 'TOSQCI00', Rev: 1, Len: 68
+18:491  0:000    13. AF7DA000: 'SSDT', 'CR CRB', Rev: 1, Len: 2517
+18:491  0:000    14. AF7D9000: 'SSDT', 'CR CRB', Rev: 1, Len: 2706
+18:491  0:000    15. AF7D8000: 'DMAR', 'TOSQCI00', Rev: 1, Len: 128
+18:491  0:000  Found UEFI Acpi 2.0 RSDP at AEEEA000
+18:491  0:000  Printing ACPI tables from RSDP AEEEA000 ...
+18:491  0:000   AEEEA000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+18:491  0:000    (Xsdt: AF7FE210, Rsdt: AF7FE124)
+18:491  0:000    AF7FE210: 'XSDT', 'TOSQCI00', Rev: 1, Len: 164
+18:491  0:000    AF7FE124: 'RSDT', 'TOSQCI00', Rev: 1, Len: 100
+18:491  0:000    Tables in Xsdt: 16
+18:491  0:000    0. AF7FB000: 'FACP', 'TOSQCI00', Rev: 5, Len: 268
+18:491  0:000        (Dsdt: AF7E9000, Facs: AF7BB000, XDsdt: AF7E9000, XFacs: 0)
+18:491  0:000        AF7E9000: 'DSDT', 'TOSQCI00', Rev: 1, Len: 57580
+18:492  0:000        AF7BB000: 'FACS', Ver: 2, Len: 64
+18:492  0:000    1. AF7FD000: 'UEFI', 'TOSQCI00', Rev: 1, Len: 566
+18:492  0:000    2. AF7FC000: 'ASF!', 'TOSQCI00', Rev: 32, Len: 165
+18:492  0:000    3. AF7FA000: 'HPET', 'TOSQCI00', Rev: 1, Len: 56
+18:492  0:000    4. AF7F9000: 'APIC', 'TOSQCI00', Rev: 3, Len: 140
+18:492  0:000    5. AF7F8000: 'MCFG', 'TOSQCI00', Rev: 1, Len: 60
+18:492  0:000    6. AF7E8000: 'SLIC', 'TOSQCI00', Rev: 1, Len: 374
+18:492  0:000    7. AF7E7000: 'WDAT', 'TOSQCI00', Rev: 1, Len: 548
+18:492  0:000    8. AF7E5000: 'SSDT', 'CR CRB', Rev: 1, Len: 4200
+18:492  0:000    9. AF7E3000: 'BOOT', 'TOSQCI00', Rev: 1, Len: 40
+18:492  0:000    10. AF7DE000: 'ASPT', 'TOSQCI00', Rev: 7, Len: 52
+18:492  0:000    11. AF7DD000: 'MSDM', 'TOSQCI00', Rev: 3, Len: 85
+18:492  0:000    12. AF7DB000: 'FPDT', 'TOSQCI00', Rev: 1, Len: 68
+18:492  0:000    13. AF7DA000: 'SSDT', 'CR CRB', Rev: 1, Len: 2517
+18:492  0:000    14. AF7D9000: 'SSDT', 'CR CRB', Rev: 1, Len: 2706
+18:492  0:000    15. AF7D8000: 'DMAR', 'TOSQCI00', Rev: 1, Len: 128
+18:492  0:000    Tables in Rsdt: 16
+18:492  0:000    0. AF7FB000: 'FACP', 'TOSQCI00', Rev: 5, Len: 268
+18:492  0:000        (Dsdt: AF7E9000, Facs: AF7BB000, XDsdt: AF7E9000, XFacs: 0)
+18:492  0:000        AF7E9000: 'DSDT', 'TOSQCI00', Rev: 1, Len: 57580
+18:493  0:000        AF7BB000: 'FACS', Ver: 2, Len: 64
+18:493  0:000    1. AF7FD000: 'UEFI', 'TOSQCI00', Rev: 1, Len: 566
+18:493  0:000    2. AF7FC000: 'ASF!', 'TOSQCI00', Rev: 32, Len: 165
+18:493  0:000    3. AF7FA000: 'HPET', 'TOSQCI00', Rev: 1, Len: 56
+18:493  0:000    4. AF7F9000: 'APIC', 'TOSQCI00', Rev: 3, Len: 140
+18:493  0:000    5. AF7F8000: 'MCFG', 'TOSQCI00', Rev: 1, Len: 60
+18:493  0:000    6. AF7E8000: 'SLIC', 'TOSQCI00', Rev: 1, Len: 374
+18:493  0:000    7. AF7E7000: 'WDAT', 'TOSQCI00', Rev: 1, Len: 548
+18:493  0:000    8. AF7E5000: 'SSDT', 'CR CRB', Rev: 1, Len: 4200
+18:493  0:000    9. AF7E3000: 'BOOT', 'TOSQCI00', Rev: 1, Len: 40
+18:493  0:000    10. AF7DE000: 'ASPT', 'TOSQCI00', Rev: 7, Len: 52
+18:493  0:000    11. AF7DD000: 'MSDM', 'TOSQCI00', Rev: 3, Len: 85
+18:493  0:000    12. AF7DB000: 'FPDT', 'TOSQCI00', Rev: 1, Len: 68
+18:493  0:000    13. AF7DA000: 'SSDT', 'CR CRB', Rev: 1, Len: 2517
+18:493  0:000    14. AF7D9000: 'SSDT', 'CR CRB', Rev: 1, Len: 2706
+18:493  0:000    15. AF7D8000: 'DMAR', 'TOSQCI00', Rev: 1, Len: 128
+18:548  0:054  exit from MainMenu 8
+18:548  0:000  ReinitSelfLib after theme change
+18:548  0:000  reinit: self device path=PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+18:548  0:000  === [ ScanVolumes ] =======================================
+18:548  0:000  Found 8 volumes with blockIO
+18:548  0:000  - [00]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)
+18:551  0:003          Result of bootcode detection: bootable unknown (legacy)
+18:551  0:000  - [01]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)
+18:554  0:002          Result of bootcode detection: bootable unknown (legacy)
+18:554  0:000  - [02]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,81FB8D0F-B717-4220-8C94-73D031E55B7A,0x1000,0x95000)
+18:557  0:002          Result of bootcode detection: bootable unknown (legacy)
+18:557  0:000          This is SelfVolume !!
+18:557  0:000  - [03]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,0D191528-9552-49CB-AC03-8954E02200A9,0x96000,0x96000)
+18:560  0:002          Result of bootcode detection: bootable unknown (legacy)
+18:560  0:000  - [04]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)
+18:563  0:002  - [05]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,1D245476-CA06-4A43-AED9-E573E5CA5BAF,0xCDED0E0,0x135F20)
+18:566  0:003  - [06]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(5,GPT,5046A270-35AC-4925-A479-84B2D3FBBC58,0xCF23000,0xF001488)
+18:569  0:002          Result of bootcode detection: bootable unknown (legacy)
+18:569  0:000  - [07]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x4,0x0,0x0)\HD(1,MBR,0xAD70B901,0x800,0xDF93000)
+18:572  0:002          Result of bootcode detection: bootable unknown (legacy)
+18:572  0:000  No AudioIoProtocols, status=Not Found
+18:572  0:000  theme inited
+18:572  0:000  Chosen theme SimpleThemeDark
+18:572  0:000  after NVRAM boot-args=kext-dev-mode=1 darkwake=0 slide=50
+18:572  0:000  === [ AddCustomEntries ] ==================================
+18:572  0:000  Custom entry 0 skipped because it is disabled.
+18:572  0:000  === [ ScanLoader ] ========================================
+18:572  0:000  - [02]: 'EFI'
+18:572  0:000          AddLoaderEntry for Volume Name=EFI
+18:572  0:000          skipped because entry is hidden
+18:572  0:000  - [04]: 'Hackintosh HD'
+18:580  0:008          AddLoaderEntry for Volume Name=Hackintosh HD
+18:580  0:000      Not match custom entry 0: Type: not match
+18:583  0:002      hibernated: set as never
+18:588  0:005  - [05]: 'Recovery HD'
+18:589  0:000          AddLoaderEntry for Volume Name=Recovery HD
+18:589  0:000      Not match custom entry 0: Type: not match
+18:593  0:004  Scanning legacy ...
+18:593  0:000  === [ AddCustomTool ] =====================================
+18:593  0:000  found tool \EFI\CLOVER\tools\Shell64U.efi
+18:593  0:000  Checking EFI partition Volume 2 for Clover
+18:593  0:000   Found Clover
+18:593  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+18:593  0:000   - found entry 0. 'Boot macOS from Hackintosh HD', Volume 'Hackintosh HD', DevicePath 'PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,06B2190F-9E89-4012-AAEB-76E808B6A919,0x12C000,0xCCC10E0)\System\Library\CoreServices\boot.efii'
+18:593  0:000  DefaultIndex=0 and MainMenu.EntryCount=8
